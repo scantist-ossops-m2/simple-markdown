@@ -1317,7 +1317,7 @@ var defaultRules /* : DefaultRules */ = {
     },
     autolink: {
         order: currOrder++,
-        match: inlineRegex(/^<([^ >]+:\/[^ >]+)>/),
+        match: inlineRegex(/^<([^: >]+:\/[^ >]+)>/),
         parse: function(capture, parse, state) {
             return {
                 type: "link",
